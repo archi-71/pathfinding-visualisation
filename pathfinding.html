@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pathfinding Visualision</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="pathfinding.js"></script>
+  </head>
+  <body data-bs-theme="dark">
+      <div class="container">
+        <h1>Pathfinding Algorithms Visualised</h1>
+        <div class="grid"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div id="pathfindingControls" class="col-md-6 col-sm-12 my-2 text-center">
+              <label id="algorithmLabel" class="mx-1 my-2" for="algorithm">Algorithm:</label>
+              <select id="algorithm" class="mx-1 my-2" name="algorithm">
+                <option value="bfs">Breadth First Search</option>
+                <option value="dfs">Depth First Search</option>
+                <option value="aStar">A* Algorithm</option>
+              </select>
+              <span id="status"></span>
+              <button id="pathfind" class="btn btn-primary mx-1 my-2">Pathfind</button>
+              <button id="cancel" class="btn btn-danger mx-1 my-2" style="display:none">Cancel</button>
+              <button id="reset" class="btn btn-primary mx-1 my-2" style="display:none">Reset</button>
+            </div>
+            <div id="generationControls" class="col-md-6 col-sm-12 my-2 text-center">
+              <label id="generationLabel" class="mx-1 my-2" for="generation">Generation Scheme:</label>
+              <select id="generation" class="mx-1 my-2" name="generation">
+                <option value="blank">Blank</option>
+                <option value="random">Random</option>
+                <option value="maze" selected>Maze</option>
+              </select>
+              <button id="generate" class="btn btn-primary mx-1 my-2">Generate</button>
+            </div>
+          </div>
+          <div class="row">
+            <div id="speedControls" class="col-md-6 col-sm-12 my-2 text-center">
+              <label for="speed" class="mx-1 my-2">Speed:</label>
+              <input id="speed" class="form-range w-50 mx-1 my-2"name="speed" type="range" min="0" max="8">
+              <span id="speedText" class="mx-1 my-2"></span>
+            </div>
+            <div id="diagonalControls" class="col-md-6 col-sm-12 my-2 text-center">
+              <label class="form-check-label mx-1 my-2" for="allowDiagonals">Allow diagonal connections?</label>
+              <input id="allowDiagonals" class="form-check-input mx-1 my-2" type="checkbox" role="switch">
+            </div>
+          </div>
+          <div id="instructions" class="text-center">
+            <p>Click and drag to place/remove obstructions and move the start or end squares.</p>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
