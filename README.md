@@ -10,3 +10,9 @@ Users can select between 3 different pathfinding algorithms; breadth-first searc
 
 Cells are coloured yellow to represent explored cells, orange to represent the 'frontier' (i.e. those somewhere in the queue to be explored next), and finally light blue to show the path found upon completion of the algorithm. Breadth-first search and the A* algorithm guarantee the shortest path to be found, whilst depth-first search does not. If obstructions make any path from start to end impossible, the pathfinding algorithms will fail, with an appropriate message, but otherwise the lenghth of the shortest path is displayed. Additionally a running total is kept of the total number of explored cells during a search, which is displayed to allow the efficiency of algorithms to be compared.
 
+<img width="1512" alt="image" src="https://github.com/archi-71/PathfindingVisualisation/assets/70474549/c46478ff-1c65-4e72-8de3-783d37644ef5">
+<img width="1512" alt="image" src="https://github.com/archi-71/PathfindingVisualisation/assets/70474549/e479ec26-8755-4bcd-ad49-693bfe428efb">
+<img width="1512" alt="image" src="https://github.com/archi-71/PathfindingVisualisation/assets/70474549/d35e3ad7-b59e-41c2-b048-6bbf5fa0f6f8">
+<img width="1512" alt="image" src="https://github.com/archi-71/PathfindingVisualisation/assets/70474549/9db7e1f4-db1d-4029-b7ad-4e8cea2844b1">
+<img width="1512" alt="image" src="https://github.com/archi-71/PathfindingVisualisation/assets/70474549/6df9be3d-233e-4d41-8eec-41a6525a023b">
+<img width="1512" alt="image" src="https://github.com/archi-71/PathfindingVisualisation/assets/70474549/6c76ef85-7c26-4330-9c4b-0da8af1d0484">
