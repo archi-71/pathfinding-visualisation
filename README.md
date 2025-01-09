@@ -1,6 +1,6 @@
 # Pathfinding Algorithms Visualised
 
-Click [here](https://archi-71.github.io/PathfindingVisualisation/) to see the project.
+Click [here](https://archi-71.github.io/pathfinding-visualisation/) to see the project.
 
 This project is an educational visualiser website which allows the user to see how a variety of graph traversal algorithms operate in a grid of cells to find a path between a start and end point.
 
